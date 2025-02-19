@@ -17,7 +17,7 @@ body {
     justify-content: center;
     align-items: start;
     width: 400px;
-    height: 450px;
+    height: 420px;
     border: none;
     border-radius: 24px;
     background-color: white;
@@ -28,7 +28,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: start;
-    margin: 20px;
+    margin-top: 30px;
 }
 #header h2 {
     font-size: 28px;
@@ -41,28 +41,35 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    bottom: 150px;
+    top: -50px;
+}
+.inputField:hover {
+    transform: scale(1.04);
+    transition: 0.1s ease-in-out;
 }
 .inputField input {
     width: 320px;
     height: 40px;
-    flex:1;
-    border-radius: 16px;
-    border: none;
     outline: none;
+    border: none;
+    border-radius: 16px;
     background: transparent;
     background-color: #e3e3e3;
+    text-indent: 35px;
 }
 input::placeholder {
     font-size: 16px;
     padding-left: 20px;
     font-weight: 600;
 }
+input:focus::placeholder {
+    opacity: 0;
+    font-size: 16px;
+}
 .inputField button {
     position: absolute;
     height: 40px;
     width: 80px;
-    /* outline: none; */
     border: none;
     border-radius: 16px;
     margin-left: 240px;
@@ -71,7 +78,12 @@ input::placeholder {
     color: white;
     cursor: pointer;
 }
-.inputField:hover {
-    transform: scale(1.04);
-    transition: 0.1s ease-in-out;
+
+.list-container li{
+    list-style: none;
+    font-size: 18px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
 }
