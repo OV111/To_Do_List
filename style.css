@@ -29,6 +29,7 @@ body {
     justify-content: center;
     align-items: start;
     margin-top: 30px;
+    margin-bottom: 0px;
 }
 #header h2 {
     font-size: 28px;
@@ -36,18 +37,8 @@ body {
     text-align: center;
     text-shadow: 2px 2px 4px grey;
 }
-.inputField {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: -50px;
-}
-.inputField:hover {
-    transform: scale(1.04);
-    transition: 0.1s ease-in-out;
-}
-.inputField input {
+
+.inputField input{
     width: 320px;
     height: 40px;
     outline: none;
@@ -56,34 +47,68 @@ body {
     background: transparent;
     background-color: #e3e3e3;
     text-indent: 35px;
+    position: fixed;
+    top: 250px;
+    left: 560px;
 }
-input::placeholder {
+.inputField input::placeholder {
     font-size: 16px;
     padding-left: 20px;
     font-weight: 600;
 }
-input:focus::placeholder {
+.inputField input:focus::placeholder {
     opacity: 0;
     font-size: 16px;
 }
 .inputField button {
-    position: absolute;
+    position: absolute; 
+    top: 250px;
+    left: 800px;
     height: 40px;
     width: 80px;
     border: none;
     border-radius: 16px;
-    margin-left: 240px;
     padding: 0px 10px;
     background: #ff5945;
     color: white;
-    cursor: pointer;
+    cursor: pointer; 
 }
-
-.list-container li{
+.list-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: fixed;
+    top: 350px;
+    left: 580px;
+}
+.list-container li {
+    display: flex;
+    align-items: center;
+    justify-content: start;
     list-style: none;
-    font-size: 18px;
-    padding: 12px 8px 12px 50px;
-    user-select: none;
+    padding: 15px;
+    gap: 22px;
+}
+.list-container .checkbox {
+    appearance: none; 
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    transition: all 0.3s ease;
     cursor: pointer;
     position: relative;
+    gap: 22px;
+}
+.list-container .checkbox:checked {
+    background-color: #ff5945;
+}
+.list-container .checkbox:checked::before {
+    content: "\2713";
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    top: -2.5px;
+    left: 2.5px;
 }
