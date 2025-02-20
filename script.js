@@ -12,12 +12,14 @@ function addingTask() {
             checkbox.type = "checkbox";
             checkbox.className = "checkbox";
 
-            li.appendChild(checkbox)
+            li.appendChild(checkbox);
             li.appendChild(textContent);
             ul.appendChild(li);
+
+            inputText.value = "";
         } else {
             console.log("non string");
         }
     });
 }
-addingTask();
+addingTask()
