@@ -1,6 +1,5 @@
 const addBtn = document.getElementById("btn");
 const inputText = document.getElementById("placeholder");
-
 const ul = document.getElementById("taskList");
 
 function addingTask() {
