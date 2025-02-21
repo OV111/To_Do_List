@@ -183,4 +183,20 @@ body {
         color: white;
         cursor: pointer; 
     }
+    .list-container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        position: fixed;
+        top: 580px;
+        left: 260px;
+    }
+    .list-container li {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        list-style: none;
+        padding: 15px;
+        gap: 18px;
+    }
 }
