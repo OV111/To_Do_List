@@ -2,7 +2,6 @@ const addBtn = document.getElementById("btn");
 const inputText = document.getElementById("placeholder");
 const ul = document.getElementById("taskList");
 
-
 function addingTask() {
     addBtn.addEventListener("click", () => {
         if(inputText.value.trim() === "") {      
@@ -27,7 +26,6 @@ function addingTask() {
         delBtn.addEventListener("click", () => {
             li.remove();
         });
-
 
         li.appendChild(checkbox);
         li.appendChild(textContent);
