@@ -6,9 +6,11 @@ and delete tasks. The application uses local storage to save tasks so that they 
 
 1. Clone this repository:
    ```sh
-   git clone https://github.com/OV111/Sudoku_Game.git
+   git clone https://github.com/OV111/To_Do_List.git
    ```
 2. Navigate to the project folder: Change to the project directory:
     ```sh
-    cd Sudoku_Game
+    cd To_Do_List
     ```
+
+### Image 🖼️
