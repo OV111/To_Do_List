@@ -14,3 +14,4 @@ and delete tasks. The application uses local storage to save tasks so that they 
     ```
 
 ### Image 🖼️
+![Image](https://github.com/user-attachments/assets/01e2284e-e548-429e-9c6d-c1b286adcae9)
