@@ -5,11 +5,13 @@ const ul = document.getElementById("taskList");
 function addingTask() {
     addBtn.addEventListener("click", () => {
         if(inputText.value.trim() === "") {      
-            alert("none string"); 
+            alert("Invalid Text!"); 
+            inputText.value = "";
             return false;
         }
         if(ul.children.length >= 5) {
-            alert("the stack is full!");
+            alert("The List is Full! \nYou need to delete some Task");
+            inputText.value = "";
             return false;
         } 
         const li = document.createElement("li");
@@ -31,11 +33,18 @@ function addingTask() {
         li.appendChild(textContent);
         li.appendChild(delBtn);
         ul.appendChild(li);
-
+    
         inputText.value = "";
     });
 }
 addingTask();
 
-
-/* add the checkbox as marked, delete task , Add also the localstorage, edit task */
+// adding local storage then 
+// function saveTask() {
+//     localStorage.setItem("data",ul);
+//     console.log(ul)   
+// }
+// function showTask() {
+//     ul = localStorage.getItem("data")
+// }
+// showTask()
