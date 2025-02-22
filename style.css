@@ -128,15 +128,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2.5px;
-    padding-bottom: 3.5px;
-    border-radius: 50%;
-    color: white;
-    border: none;
-    outline: none;
-    cursor: pointer;
     position: absolute;
     left: 280px;
+    padding: 2.5px;
+    padding-bottom: 3.5px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
 }
 .list-container .delete:hover {
     transform: scale(1.1);
@@ -144,101 +144,6 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 720px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    body {
-        font-family: "Roboto", sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-        background: linear-gradient(135deg, #153677, #4e085f);
-    }
-    .container {
-        display: grid;
-        justify-content: center;
-        align-items: start;
-        width: 90%;
-        height: 420px;
-        border: none;
-        border-radius: 24px;
-        background-color: white;
-        box-shadow: 2px 2px 15px grey, -2px -2px 15px grey;
-    }
-    
-    #header {
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        margin-top: 30px;
-        margin-bottom: 0px;
-    }
-    #header h2 {
-        font-size: 24px;
-        color: #171770;
-        text-align: center;
-        text-shadow: 2px 2px 4px grey;
-    }
-    .inputField input{
-        width: 200px;
-        height: 30px;
-        outline: none;
-        border: none;
-        border-radius: 16px;
-        background: transparent;
-        background-color: #e3e3e3;
-        text-indent: 15px;
-        position: fixed;
-        top: 520px;
-        left: 260px;
-    }
-    .inputField input::placeholder {
-        font-size: 12px;
-        padding-left: 10px;
-        font-weight: 600;
-    }
-    .inputField button {
-        position: absolute; 
-        top: 520px;
-        left: 390px;
-        height: 30px;
-        width: 70px;
-        border: none;
-        border-radius: 16px;
-        padding: 0px 10px;
-        background: #ff5945;
-        color: white;
-        cursor: pointer; 
-    }
-    .list-container {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        position: fixed;
-        top: 580px;
-        left: 260px;
-    }
-    .list-container li {
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        list-style: none;
-        padding: 15px;
-        gap: 18px;
-        white-space: nowrap;
-        overflow: hidden; 
-        text-overflow: ellipsis; 
-        max-width: 150px;
-    }
-    .list-container .delete {
-        left: 170px;
-    }
-}
 @media (max-width: 1024px) {
     * {
         margin: 0;
@@ -307,5 +212,53 @@ body {
     }
     .list-container .delete {
         left: 170px;
+    }
+}
+@media (max-width:768px) {
+    .inputField input{
+        width: 200px;
+        height: 30px;
+        outline: none;
+        border: none;
+        border-radius: 16px;
+        background: transparent;
+        background-color: #e3e3e3;
+        text-indent: 15px;
+        position: fixed;
+        top: 520px;
+        left: 280px;
+    }
+    .inputField button {
+        position: absolute; 
+        top: 520px;
+        left: 420px;
+        height: 30px;
+        width: 70px;
+        border: none;
+        border-radius: 16px;
+        padding: 0px 10px;
+        background: #ff5945;
+        color: white;
+        cursor: pointer; 
+    }
+    .list-container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        position: fixed;
+        top: 580px;
+        left: 280px;
+    }
+    .list-container li {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        list-style: none;
+        padding: 15px;
+        gap: 18px;
+        white-space: nowrap;
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        max-width: 150px;
     }
 }
