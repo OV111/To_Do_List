@@ -17,7 +17,7 @@ body {
     justify-content: center;
     align-items: start;
     width: 400px;
-    height: 420px;
+    height: 450px;
     border: none;
     border-radius: 24px;
     background-color: white;
@@ -105,6 +105,10 @@ body {
     position: relative;
     gap: 22px;
 }
+.list-container .checkbox:hover {
+    transform: scale(1.1);
+    transition: 0.3 ease-in-out;
+}
 .list-container .checkbox:checked {
     background-color: #ff5945;
 }
@@ -117,7 +121,24 @@ body {
     left: 2.5px;
 }
 
-
+.list-container .delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5px;
+    padding-bottom: 3.5px;
+    border-radius: 50%;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    left: 280px;
+}
+.list-container .delete:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
 
 /* Responsive */
 @media (max-width: 720px) {
